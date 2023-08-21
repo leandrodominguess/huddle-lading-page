@@ -1,0 +1,179 @@
+** {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.container {
+    height: 95vh;
+    width: auto;
+}
+
+#logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+
+}
+
+#logo img {
+    width: 210px;
+}
+
+#main {
+    display: flex;
+    height: 95vh;
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#text {
+    width: 470px;
+    color: white;
+}
+
+#text button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: solid 0px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    box-shadow: rgb(0, 0, 0) 2px 1px 40px -13px;
+    transition: all 1s;
+}
+
+#text button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#text h1{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.2px;
+    font-size: 40px;
+}
+
+#text p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#social_media {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#social_media svg{
+    height: 25px;
+    width: 25px;
+    border: solid 1px white;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 5px;
+    transition: all 0.4s;
+}
+
+
+#social_media svg:hover {
+    transition: all 0.4s;
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
+    border: solid 1px hsl(300, 69%, 71%);
+}
+
+#social_media svg:hover path{
+    fill: hsl(300, 69%, 71%);
+    transition: all 0.4s;
+}
+
+footer {
+    color: white;
+}
+
+@media only screen and (max-width: 960px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-size: 100vw;
+      }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    #logo {
+        position: static;
+        display: flex;
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    #logo img {
+        width: 170px;
+    }
+
+    #templates {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #templates img{
+        width: 85%;
+    }
+
+    #text {
+        width: 80%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text h1{
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.2px;
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    #text p{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #text button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #social_media {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .attribution {
+        padding-bottom: 15px;
+    }
+}
